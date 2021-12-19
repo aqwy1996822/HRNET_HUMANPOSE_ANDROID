@@ -1,0 +1,7 @@
+Executable : C:\Users\Admin\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+D:\AndroidProjects\ncnn-android-nanodet\app\.cxx\cmake\debug\x86_64
+nanodetncnn
+jvmArgs : 
+

@@ -1,0 +1,3 @@
+D:/AndroidProjects/ncnn-android-nanodet/app/.cxx/cmake/debug/x86/CMakeFiles/nanodetncnn.dir
+D:/AndroidProjects/ncnn-android-nanodet/app/.cxx/cmake/debug/x86/CMakeFiles/edit_cache.dir
+D:/AndroidProjects/ncnn-android-nanodet/app/.cxx/cmake/debug/x86/CMakeFiles/rebuild_cache.dir

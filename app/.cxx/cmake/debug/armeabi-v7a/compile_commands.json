@@ -1,0 +1,19 @@
+[
+{
+  "directory": "D:/AndroidProjects/ncnn-android-nanodet/app/.cxx/cmake/debug/armeabi-v7a",
+  "command": "C:\\Users\\Admin\\AppData\\Local\\Android\\Sdk\\ndk\\22.1.7171670\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi24 --gcc-toolchain=C:/Users/Admin/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Admin/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dnanodetncnn_EXPORTS -isystem D:/AndroidProjects/ncnn-android-nanodet/app/src/main/jni/ncnn-20210507-android-vulkan/armeabi-v7a/include/ncnn -isystem D:/AndroidProjects/ncnn-android-nanodet/app/src/main/jni/opencv-mobile-4.5.1-android/sdk/native/jni/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -fno-rtti -fno-exceptions -std=gnu++11 -o CMakeFiles\\nanodetncnn.dir\\nanodetncnn.cpp.o -c D:\\AndroidProjects\\ncnn-android-nanodet\\app\\src\\main\\jni\\nanodetncnn.cpp",
+  "file": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\src\\main\\jni\\nanodetncnn.cpp"
+},
+
+{
+  "directory": "D:/AndroidProjects/ncnn-android-nanodet/app/.cxx/cmake/debug/armeabi-v7a",
+  "command": "C:\\Users\\Admin\\AppData\\Local\\Android\\Sdk\\ndk\\22.1.7171670\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi24 --gcc-toolchain=C:/Users/Admin/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Admin/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dnanodetncnn_EXPORTS -isystem D:/AndroidProjects/ncnn-android-nanodet/app/src/main/jni/ncnn-20210507-android-vulkan/armeabi-v7a/include/ncnn -isystem D:/AndroidProjects/ncnn-android-nanodet/app/src/main/jni/opencv-mobile-4.5.1-android/sdk/native/jni/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -fno-rtti -fno-exceptions -std=gnu++11 -o CMakeFiles\\nanodetncnn.dir\\nanodet.cpp.o -c D:\\AndroidProjects\\ncnn-android-nanodet\\app\\src\\main\\jni\\nanodet.cpp",
+  "file": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\src\\main\\jni\\nanodet.cpp"
+},
+
+{
+  "directory": "D:/AndroidProjects/ncnn-android-nanodet/app/.cxx/cmake/debug/armeabi-v7a",
+  "command": "C:\\Users\\Admin\\AppData\\Local\\Android\\Sdk\\ndk\\22.1.7171670\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi24 --gcc-toolchain=C:/Users/Admin/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/Admin/AppData/Local/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dnanodetncnn_EXPORTS -isystem D:/AndroidProjects/ncnn-android-nanodet/app/src/main/jni/ncnn-20210507-android-vulkan/armeabi-v7a/include/ncnn -isystem D:/AndroidProjects/ncnn-android-nanodet/app/src/main/jni/opencv-mobile-4.5.1-android/sdk/native/jni/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -fno-rtti -fno-exceptions -std=gnu++11 -o CMakeFiles\\nanodetncnn.dir\\ndkcamera.cpp.o -c D:\\AndroidProjects\\ncnn-android-nanodet\\app\\src\\main\\jni\\ndkcamera.cpp",
+  "file": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\src\\main\\jni\\ndkcamera.cpp"
+}
+]

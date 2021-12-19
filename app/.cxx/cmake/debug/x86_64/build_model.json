@@ -1,0 +1,70 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "D:\\AndroidProjects\\ncnn-android-nanodet",
+      "sdkFolder": "C:\\Users\\Admin\\AppData\\Local\\Android\\Sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\build\\intermediates",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "D:\\AndroidProjects\\ncnn-android-nanodet\\app",
+      "makeFile": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\src\\main\\jni\\CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "D:\\AndroidProjects\\ncnn-android-nanodet\\.cxx",
+      "cxxFolder": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\.cxx",
+      "ndkFolder": "C:\\Users\\Admin\\AppData\\Local\\Android\\Sdk\\ndk\\22.1.7171670",
+      "ndkVersion": "22.1.7171670",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "debug",
+    "soFolder": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\build\\intermediates\\cmake\\debug\\lib",
+    "objFolder": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\build\\intermediates\\cmake\\debug\\obj",
+    "jsonFolder": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\.cxx\\cmake\\debug",
+    "gradleBuildOutputFolder": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\.cxx\\cxx\\debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "X86_64",
+  "abiPlatformVersion": 24,
+  "cxxBuildFolder": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\.cxx\\cmake\\debug\\x86_64",
+  "jsonFile": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\.cxx\\cmake\\debug\\x86_64\\android_gradle_build.json",
+  "gradleBuildOutputFolder": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\.cxx\\cxx\\debug\\x86_64",
+  "objFolder": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\build\\intermediates\\cmake\\debug\\obj\\x86_64",
+  "buildCommandFile": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\.cxx\\cmake\\debug\\x86_64\\build_command.txt",
+  "buildOutputFile": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\.cxx\\cmake\\debug\\x86_64\\build_output.txt",
+  "modelOutputFile": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\.cxx\\cmake\\debug\\x86_64\\build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\.cxx\\cxx\\debug\\x86_64\\CMakeLists.txt",
+    "toolchainWrapperFile": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\.cxx\\cxx\\debug\\x86_64\\android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\.cxx\\cxx\\debug\\x86_64\\build_generation_state.json",
+    "cacheKeyFile": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\.cxx\\cxx\\debug\\x86_64\\compiler_cache_key.json",
+    "compilerCacheUseFile": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\.cxx\\cxx\\debug\\x86_64\\compiler_cache_use.json",
+    "compilerCacheWriteFile": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\.cxx\\cxx\\debug\\x86_64\\compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\.cxx\\cxx\\debug\\x86_64\\compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\.cxx\\cmake\\debug\\x86_64\\json_generation_record.json",
+  "compileCommandsJsonFile": "D:\\AndroidProjects\\ncnn-android-nanodet\\app\\.cxx\\cmake\\debug\\x86_64\\compile_commands.json"
+}

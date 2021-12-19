@@ -1,0 +1,2 @@
+ninja: Entering directory `D:\AndroidProjects\ncnn-android-nanodet\app\.cxx\cmake\debug\x86_64'
+ninja: no work to do.

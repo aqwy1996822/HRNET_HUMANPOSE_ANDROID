@@ -1,0 +1,747 @@
+7767517
+745 906
+Input                    input.1                  0 1 input.1
+Convolution              Conv_0                   1 1 input.1 1757 0=64 1=3 3=2 4=1 5=1 6=1728 9=1
+Convolution              Conv_2                   1 1 1757 1760 0=64 1=3 3=2 4=1 5=1 6=36864 9=1
+Split                    splitncnn_0              1 2 1760 1760_splitncnn_0 1760_splitncnn_1
+Convolution              Conv_4                   1 1 1760_splitncnn_1 1763 0=64 1=1 5=1 6=4096 9=1
+Convolution              Conv_6                   1 1 1763 1766 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_8                   1 1 1766 2886 0=256 1=1 5=1 6=16384
+Convolution              Conv_9                   1 1 1760_splitncnn_0 2889 0=256 1=1 5=1 6=16384
+BinaryOp                 Add_10                   2 1 2886 2889 1771
+ReLU                     Relu_11                  1 1 1771 1772
+Split                    splitncnn_1              1 2 1772 1772_splitncnn_0 1772_splitncnn_1
+Convolution              Conv_12                  1 1 1772_splitncnn_1 1775 0=64 1=1 5=1 6=16384 9=1
+Convolution              Conv_14                  1 1 1775 1778 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_16                  1 1 1778 2898 0=256 1=1 5=1 6=16384
+BinaryOp                 Add_17                   2 1 2898 1772_splitncnn_0 1781
+ReLU                     Relu_18                  1 1 1781 1782
+Split                    splitncnn_2              1 2 1782 1782_splitncnn_0 1782_splitncnn_1
+Convolution              Conv_19                  1 1 1782_splitncnn_1 1785 0=64 1=1 5=1 6=16384 9=1
+Convolution              Conv_21                  1 1 1785 1788 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_23                  1 1 1788 2907 0=256 1=1 5=1 6=16384
+BinaryOp                 Add_24                   2 1 2907 1782_splitncnn_0 1791
+ReLU                     Relu_25                  1 1 1791 1792
+Split                    splitncnn_3              1 2 1792 1792_splitncnn_0 1792_splitncnn_1
+Convolution              Conv_26                  1 1 1792_splitncnn_1 1795 0=64 1=1 5=1 6=16384 9=1
+Convolution              Conv_28                  1 1 1795 1798 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_30                  1 1 1798 2916 0=256 1=1 5=1 6=16384
+BinaryOp                 Add_31                   2 1 2916 1792_splitncnn_0 1801
+ReLU                     Relu_32                  1 1 1801 1802
+Split                    splitncnn_4              1 2 1802 1802_splitncnn_0 1802_splitncnn_1
+Convolution              Conv_33                  1 1 1802_splitncnn_1 1805 0=32 1=3 4=1 5=1 6=73728 9=1
+Split                    splitncnn_5              1 2 1805 1805_splitncnn_0 1805_splitncnn_1
+Convolution              Conv_35                  1 1 1802_splitncnn_0 1808 0=64 1=3 3=2 4=1 5=1 6=147456 9=1
+Split                    splitncnn_6              1 2 1808 1808_splitncnn_0 1808_splitncnn_1
+Convolution              Conv_37                  1 1 1805_splitncnn_1 1811 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_39                  1 1 1811 2928 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_40                   2 1 2928 1805_splitncnn_0 1814
+ReLU                     Relu_41                  1 1 1814 1815
+Split                    splitncnn_7              1 2 1815 1815_splitncnn_0 1815_splitncnn_1
+Convolution              Conv_42                  1 1 1815_splitncnn_1 1818 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_44                  1 1 1818 2934 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_45                   2 1 2934 1815_splitncnn_0 1821
+ReLU                     Relu_46                  1 1 1821 1822
+Split                    splitncnn_8              1 2 1822 1822_splitncnn_0 1822_splitncnn_1
+Convolution              Conv_47                  1 1 1822_splitncnn_1 1825 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_49                  1 1 1825 2940 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_50                   2 1 2940 1822_splitncnn_0 1828
+ReLU                     Relu_51                  1 1 1828 1829
+Split                    splitncnn_9              1 2 1829 1829_splitncnn_0 1829_splitncnn_1
+Convolution              Conv_52                  1 1 1829_splitncnn_1 1832 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_54                  1 1 1832 2946 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_55                   2 1 2946 1829_splitncnn_0 1835
+ReLU                     Relu_56                  1 1 1835 1836
+Split                    splitncnn_10             1 2 1836 1836_splitncnn_0 1836_splitncnn_1
+Convolution              Conv_57                  1 1 1808_splitncnn_1 1839 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_59                  1 1 1839 2952 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_60                   2 1 2952 1808_splitncnn_0 1842
+ReLU                     Relu_61                  1 1 1842 1843
+Split                    splitncnn_11             1 2 1843 1843_splitncnn_0 1843_splitncnn_1
+Convolution              Conv_62                  1 1 1843_splitncnn_1 1846 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_64                  1 1 1846 2958 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_65                   2 1 2958 1843_splitncnn_0 1849
+ReLU                     Relu_66                  1 1 1849 1850
+Split                    splitncnn_12             1 2 1850 1850_splitncnn_0 1850_splitncnn_1
+Convolution              Conv_67                  1 1 1850_splitncnn_1 1853 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_69                  1 1 1853 2964 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_70                   2 1 2964 1850_splitncnn_0 1856
+ReLU                     Relu_71                  1 1 1856 1857
+Split                    splitncnn_13             1 2 1857 1857_splitncnn_0 1857_splitncnn_1
+Convolution              Conv_72                  1 1 1857_splitncnn_1 1860 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_74                  1 1 1860 2970 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_75                   2 1 2970 1857_splitncnn_0 1863
+ReLU                     Relu_76                  1 1 1863 1864
+Split                    splitncnn_14             1 2 1864 1864_splitncnn_0 1864_splitncnn_1
+Convolution              Conv_77                  1 1 1864_splitncnn_1 2973 0=32 1=1 5=1 6=2048
+Interp                   Upsample_78              1 1 2973 1870 0=1 1=2.000000e+00 2=2.000000e+00
+Convolution              Conv_79                  1 1 1836_splitncnn_1 2976 0=64 1=3 3=2 4=1 5=1 6=18432
+BinaryOp                 Add_80                   2 1 1836_splitncnn_0 1870 1873
+ReLU                     Relu_81                  1 1 1873 1874
+Split                    splitncnn_15             1 2 1874 1874_splitncnn_0 1874_splitncnn_1
+BinaryOp                 Add_82                   2 1 2976 1864_splitncnn_0 1875
+ReLU                     Relu_83                  1 1 1875 1876
+Split                    splitncnn_16             1 3 1876 1876_splitncnn_0 1876_splitncnn_1 1876_splitncnn_2
+Convolution              Conv_84                  1 1 1876_splitncnn_2 1879 0=128 1=3 3=2 4=1 5=1 6=73728 9=1
+Split                    splitncnn_17             1 2 1879 1879_splitncnn_0 1879_splitncnn_1
+Convolution              Conv_86                  1 1 1874_splitncnn_1 1882 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_88                  1 1 1882 2985 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_89                   2 1 2985 1874_splitncnn_0 1885
+ReLU                     Relu_90                  1 1 1885 1886
+Split                    splitncnn_18             1 2 1886 1886_splitncnn_0 1886_splitncnn_1
+Convolution              Conv_91                  1 1 1886_splitncnn_1 1889 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_93                  1 1 1889 2991 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_94                   2 1 2991 1886_splitncnn_0 1892
+ReLU                     Relu_95                  1 1 1892 1893
+Split                    splitncnn_19             1 2 1893 1893_splitncnn_0 1893_splitncnn_1
+Convolution              Conv_96                  1 1 1893_splitncnn_1 1896 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_98                  1 1 1896 2997 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_99                   2 1 2997 1893_splitncnn_0 1899
+ReLU                     Relu_100                 1 1 1899 1900
+Split                    splitncnn_20             1 2 1900 1900_splitncnn_0 1900_splitncnn_1
+Convolution              Conv_101                 1 1 1900_splitncnn_1 1903 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_103                 1 1 1903 3003 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_104                  2 1 3003 1900_splitncnn_0 1906
+ReLU                     Relu_105                 1 1 1906 1907
+Split                    splitncnn_21             1 3 1907 1907_splitncnn_0 1907_splitncnn_1 1907_splitncnn_2
+Convolution              Conv_106                 1 1 1876_splitncnn_1 1910 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_108                 1 1 1910 3009 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_109                  2 1 3009 1876_splitncnn_0 1913
+ReLU                     Relu_110                 1 1 1913 1914
+Split                    splitncnn_22             1 2 1914 1914_splitncnn_0 1914_splitncnn_1
+Convolution              Conv_111                 1 1 1914_splitncnn_1 1917 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_113                 1 1 1917 3015 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_114                  2 1 3015 1914_splitncnn_0 1920
+ReLU                     Relu_115                 1 1 1920 1921
+Split                    splitncnn_23             1 2 1921 1921_splitncnn_0 1921_splitncnn_1
+Convolution              Conv_116                 1 1 1921_splitncnn_1 1924 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_118                 1 1 1924 3021 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_119                  2 1 3021 1921_splitncnn_0 1927
+ReLU                     Relu_120                 1 1 1927 1928
+Split                    splitncnn_24             1 2 1928 1928_splitncnn_0 1928_splitncnn_1
+Convolution              Conv_121                 1 1 1928_splitncnn_1 1931 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_123                 1 1 1931 3027 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_124                  2 1 3027 1928_splitncnn_0 1934
+ReLU                     Relu_125                 1 1 1934 1935
+Split                    splitncnn_25             1 3 1935 1935_splitncnn_0 1935_splitncnn_1 1935_splitncnn_2
+Convolution              Conv_126                 1 1 1879_splitncnn_1 1938 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_128                 1 1 1938 3033 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_129                  2 1 3033 1879_splitncnn_0 1941
+ReLU                     Relu_130                 1 1 1941 1942
+Split                    splitncnn_26             1 2 1942 1942_splitncnn_0 1942_splitncnn_1
+Convolution              Conv_131                 1 1 1942_splitncnn_1 1945 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_133                 1 1 1945 3039 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_134                  2 1 3039 1942_splitncnn_0 1948
+ReLU                     Relu_135                 1 1 1948 1949
+Split                    splitncnn_27             1 2 1949 1949_splitncnn_0 1949_splitncnn_1
+Convolution              Conv_136                 1 1 1949_splitncnn_1 1952 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_138                 1 1 1952 3045 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_139                  2 1 3045 1949_splitncnn_0 1955
+ReLU                     Relu_140                 1 1 1955 1956
+Split                    splitncnn_28             1 2 1956 1956_splitncnn_0 1956_splitncnn_1
+Convolution              Conv_141                 1 1 1956_splitncnn_1 1959 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_143                 1 1 1959 3051 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_144                  2 1 3051 1956_splitncnn_0 1962
+ReLU                     Relu_145                 1 1 1962 1963
+Split                    splitncnn_29             1 3 1963 1963_splitncnn_0 1963_splitncnn_1 1963_splitncnn_2
+Convolution              Conv_146                 1 1 1935_splitncnn_2 3054 0=32 1=1 5=1 6=2048
+Interp                   Upsample_147             1 1 3054 1969 0=1 1=2.000000e+00 2=2.000000e+00
+BinaryOp                 Add_148                  2 1 1907_splitncnn_2 1969 1970
+Convolution              Conv_149                 1 1 1963_splitncnn_2 3057 0=32 1=1 5=1 6=4096
+Interp                   Upsample_150             1 1 3057 1976 0=1 1=4.000000e+00 2=4.000000e+00
+Convolution              Conv_151                 1 1 1907_splitncnn_1 3060 0=64 1=3 3=2 4=1 5=1 6=18432
+BinaryOp                 Add_152                  2 1 3060 1935_splitncnn_1 1979
+Convolution              Conv_153                 1 1 1963_splitncnn_1 3063 0=64 1=1 5=1 6=8192
+Interp                   Upsample_154             1 1 3063 1985 0=1 1=2.000000e+00 2=2.000000e+00
+Convolution              Conv_155                 1 1 1907_splitncnn_0 1988 0=32 1=3 3=2 4=1 5=1 6=9216 9=1
+Convolution              Conv_157                 1 1 1988 3069 0=128 1=3 3=2 4=1 5=1 6=36864
+Convolution              Conv_158                 1 1 1935_splitncnn_0 3072 0=128 1=3 3=2 4=1 5=1 6=73728
+BinaryOp                 Add_159                  2 1 3069 3072 1993
+BinaryOp                 Add_160                  2 1 1970 1976 1994
+ReLU                     Relu_161                 1 1 1994 1995
+Split                    splitncnn_30             1 2 1995 1995_splitncnn_0 1995_splitncnn_1
+BinaryOp                 Add_162                  2 1 1979 1985 1996
+ReLU                     Relu_163                 1 1 1996 1997
+Split                    splitncnn_31             1 2 1997 1997_splitncnn_0 1997_splitncnn_1
+BinaryOp                 Add_164                  2 1 1993 1963_splitncnn_0 1998
+ReLU                     Relu_165                 1 1 1998 1999
+Split                    splitncnn_32             1 2 1999 1999_splitncnn_0 1999_splitncnn_1
+Convolution              Conv_166                 1 1 1995_splitncnn_1 2002 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_168                 1 1 2002 3078 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_169                  2 1 3078 1995_splitncnn_0 2005
+ReLU                     Relu_170                 1 1 2005 2006
+Split                    splitncnn_33             1 2 2006 2006_splitncnn_0 2006_splitncnn_1
+Convolution              Conv_171                 1 1 2006_splitncnn_1 2009 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_173                 1 1 2009 3084 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_174                  2 1 3084 2006_splitncnn_0 2012
+ReLU                     Relu_175                 1 1 2012 2013
+Split                    splitncnn_34             1 2 2013 2013_splitncnn_0 2013_splitncnn_1
+Convolution              Conv_176                 1 1 2013_splitncnn_1 2016 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_178                 1 1 2016 3090 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_179                  2 1 3090 2013_splitncnn_0 2019
+ReLU                     Relu_180                 1 1 2019 2020
+Split                    splitncnn_35             1 2 2020 2020_splitncnn_0 2020_splitncnn_1
+Convolution              Conv_181                 1 1 2020_splitncnn_1 2023 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_183                 1 1 2023 3096 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_184                  2 1 3096 2020_splitncnn_0 2026
+ReLU                     Relu_185                 1 1 2026 2027
+Split                    splitncnn_36             1 3 2027 2027_splitncnn_0 2027_splitncnn_1 2027_splitncnn_2
+Convolution              Conv_186                 1 1 1997_splitncnn_1 2030 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_188                 1 1 2030 3102 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_189                  2 1 3102 1997_splitncnn_0 2033
+ReLU                     Relu_190                 1 1 2033 2034
+Split                    splitncnn_37             1 2 2034 2034_splitncnn_0 2034_splitncnn_1
+Convolution              Conv_191                 1 1 2034_splitncnn_1 2037 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_193                 1 1 2037 3108 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_194                  2 1 3108 2034_splitncnn_0 2040
+ReLU                     Relu_195                 1 1 2040 2041
+Split                    splitncnn_38             1 2 2041 2041_splitncnn_0 2041_splitncnn_1
+Convolution              Conv_196                 1 1 2041_splitncnn_1 2044 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_198                 1 1 2044 3114 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_199                  2 1 3114 2041_splitncnn_0 2047
+ReLU                     Relu_200                 1 1 2047 2048
+Split                    splitncnn_39             1 2 2048 2048_splitncnn_0 2048_splitncnn_1
+Convolution              Conv_201                 1 1 2048_splitncnn_1 2051 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_203                 1 1 2051 3120 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_204                  2 1 3120 2048_splitncnn_0 2054
+ReLU                     Relu_205                 1 1 2054 2055
+Split                    splitncnn_40             1 3 2055 2055_splitncnn_0 2055_splitncnn_1 2055_splitncnn_2
+Convolution              Conv_206                 1 1 1999_splitncnn_1 2058 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_208                 1 1 2058 3126 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_209                  2 1 3126 1999_splitncnn_0 2061
+ReLU                     Relu_210                 1 1 2061 2062
+Split                    splitncnn_41             1 2 2062 2062_splitncnn_0 2062_splitncnn_1
+Convolution              Conv_211                 1 1 2062_splitncnn_1 2065 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_213                 1 1 2065 3132 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_214                  2 1 3132 2062_splitncnn_0 2068
+ReLU                     Relu_215                 1 1 2068 2069
+Split                    splitncnn_42             1 2 2069 2069_splitncnn_0 2069_splitncnn_1
+Convolution              Conv_216                 1 1 2069_splitncnn_1 2072 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_218                 1 1 2072 3138 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_219                  2 1 3138 2069_splitncnn_0 2075
+ReLU                     Relu_220                 1 1 2075 2076
+Split                    splitncnn_43             1 2 2076 2076_splitncnn_0 2076_splitncnn_1
+Convolution              Conv_221                 1 1 2076_splitncnn_1 2079 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_223                 1 1 2079 3144 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_224                  2 1 3144 2076_splitncnn_0 2082
+ReLU                     Relu_225                 1 1 2082 2083
+Split                    splitncnn_44             1 3 2083 2083_splitncnn_0 2083_splitncnn_1 2083_splitncnn_2
+Convolution              Conv_226                 1 1 2055_splitncnn_2 3147 0=32 1=1 5=1 6=2048
+Interp                   Upsample_227             1 1 3147 2089 0=1 1=2.000000e+00 2=2.000000e+00
+BinaryOp                 Add_228                  2 1 2027_splitncnn_2 2089 2090
+Convolution              Conv_229                 1 1 2083_splitncnn_2 3150 0=32 1=1 5=1 6=4096
+Interp                   Upsample_230             1 1 3150 2096 0=1 1=4.000000e+00 2=4.000000e+00
+Convolution              Conv_231                 1 1 2027_splitncnn_1 3153 0=64 1=3 3=2 4=1 5=1 6=18432
+BinaryOp                 Add_232                  2 1 3153 2055_splitncnn_1 2099
+Convolution              Conv_233                 1 1 2083_splitncnn_1 3156 0=64 1=1 5=1 6=8192
+Interp                   Upsample_234             1 1 3156 2105 0=1 1=2.000000e+00 2=2.000000e+00
+Convolution              Conv_235                 1 1 2027_splitncnn_0 2108 0=32 1=3 3=2 4=1 5=1 6=9216 9=1
+Convolution              Conv_237                 1 1 2108 3162 0=128 1=3 3=2 4=1 5=1 6=36864
+Convolution              Conv_238                 1 1 2055_splitncnn_0 3165 0=128 1=3 3=2 4=1 5=1 6=73728
+BinaryOp                 Add_239                  2 1 3162 3165 2113
+BinaryOp                 Add_240                  2 1 2090 2096 2114
+ReLU                     Relu_241                 1 1 2114 2115
+Split                    splitncnn_45             1 2 2115 2115_splitncnn_0 2115_splitncnn_1
+BinaryOp                 Add_242                  2 1 2099 2105 2116
+ReLU                     Relu_243                 1 1 2116 2117
+Split                    splitncnn_46             1 2 2117 2117_splitncnn_0 2117_splitncnn_1
+BinaryOp                 Add_244                  2 1 2113 2083_splitncnn_0 2118
+ReLU                     Relu_245                 1 1 2118 2119
+Split                    splitncnn_47             1 2 2119 2119_splitncnn_0 2119_splitncnn_1
+Convolution              Conv_246                 1 1 2115_splitncnn_1 2122 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_248                 1 1 2122 3171 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_249                  2 1 3171 2115_splitncnn_0 2125
+ReLU                     Relu_250                 1 1 2125 2126
+Split                    splitncnn_48             1 2 2126 2126_splitncnn_0 2126_splitncnn_1
+Convolution              Conv_251                 1 1 2126_splitncnn_1 2129 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_253                 1 1 2129 3177 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_254                  2 1 3177 2126_splitncnn_0 2132
+ReLU                     Relu_255                 1 1 2132 2133
+Split                    splitncnn_49             1 2 2133 2133_splitncnn_0 2133_splitncnn_1
+Convolution              Conv_256                 1 1 2133_splitncnn_1 2136 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_258                 1 1 2136 3183 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_259                  2 1 3183 2133_splitncnn_0 2139
+ReLU                     Relu_260                 1 1 2139 2140
+Split                    splitncnn_50             1 2 2140 2140_splitncnn_0 2140_splitncnn_1
+Convolution              Conv_261                 1 1 2140_splitncnn_1 2143 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_263                 1 1 2143 3189 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_264                  2 1 3189 2140_splitncnn_0 2146
+ReLU                     Relu_265                 1 1 2146 2147
+Split                    splitncnn_51             1 3 2147 2147_splitncnn_0 2147_splitncnn_1 2147_splitncnn_2
+Convolution              Conv_266                 1 1 2117_splitncnn_1 2150 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_268                 1 1 2150 3195 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_269                  2 1 3195 2117_splitncnn_0 2153
+ReLU                     Relu_270                 1 1 2153 2154
+Split                    splitncnn_52             1 2 2154 2154_splitncnn_0 2154_splitncnn_1
+Convolution              Conv_271                 1 1 2154_splitncnn_1 2157 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_273                 1 1 2157 3201 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_274                  2 1 3201 2154_splitncnn_0 2160
+ReLU                     Relu_275                 1 1 2160 2161
+Split                    splitncnn_53             1 2 2161 2161_splitncnn_0 2161_splitncnn_1
+Convolution              Conv_276                 1 1 2161_splitncnn_1 2164 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_278                 1 1 2164 3207 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_279                  2 1 3207 2161_splitncnn_0 2167
+ReLU                     Relu_280                 1 1 2167 2168
+Split                    splitncnn_54             1 2 2168 2168_splitncnn_0 2168_splitncnn_1
+Convolution              Conv_281                 1 1 2168_splitncnn_1 2171 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_283                 1 1 2171 3213 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_284                  2 1 3213 2168_splitncnn_0 2174
+ReLU                     Relu_285                 1 1 2174 2175
+Split                    splitncnn_55             1 3 2175 2175_splitncnn_0 2175_splitncnn_1 2175_splitncnn_2
+Convolution              Conv_286                 1 1 2119_splitncnn_1 2178 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_288                 1 1 2178 3219 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_289                  2 1 3219 2119_splitncnn_0 2181
+ReLU                     Relu_290                 1 1 2181 2182
+Split                    splitncnn_56             1 2 2182 2182_splitncnn_0 2182_splitncnn_1
+Convolution              Conv_291                 1 1 2182_splitncnn_1 2185 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_293                 1 1 2185 3225 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_294                  2 1 3225 2182_splitncnn_0 2188
+ReLU                     Relu_295                 1 1 2188 2189
+Split                    splitncnn_57             1 2 2189 2189_splitncnn_0 2189_splitncnn_1
+Convolution              Conv_296                 1 1 2189_splitncnn_1 2192 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_298                 1 1 2192 3231 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_299                  2 1 3231 2189_splitncnn_0 2195
+ReLU                     Relu_300                 1 1 2195 2196
+Split                    splitncnn_58             1 2 2196 2196_splitncnn_0 2196_splitncnn_1
+Convolution              Conv_301                 1 1 2196_splitncnn_1 2199 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_303                 1 1 2199 3237 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_304                  2 1 3237 2196_splitncnn_0 2202
+ReLU                     Relu_305                 1 1 2202 2203
+Split                    splitncnn_59             1 3 2203 2203_splitncnn_0 2203_splitncnn_1 2203_splitncnn_2
+Convolution              Conv_306                 1 1 2175_splitncnn_2 3240 0=32 1=1 5=1 6=2048
+Interp                   Upsample_307             1 1 3240 2209 0=1 1=2.000000e+00 2=2.000000e+00
+BinaryOp                 Add_308                  2 1 2147_splitncnn_2 2209 2210
+Convolution              Conv_309                 1 1 2203_splitncnn_2 3243 0=32 1=1 5=1 6=4096
+Interp                   Upsample_310             1 1 3243 2216 0=1 1=4.000000e+00 2=4.000000e+00
+Convolution              Conv_311                 1 1 2147_splitncnn_1 3246 0=64 1=3 3=2 4=1 5=1 6=18432
+BinaryOp                 Add_312                  2 1 3246 2175_splitncnn_1 2219
+Convolution              Conv_313                 1 1 2203_splitncnn_1 3249 0=64 1=1 5=1 6=8192
+Interp                   Upsample_314             1 1 3249 2225 0=1 1=2.000000e+00 2=2.000000e+00
+Convolution              Conv_315                 1 1 2147_splitncnn_0 2228 0=32 1=3 3=2 4=1 5=1 6=9216 9=1
+Convolution              Conv_317                 1 1 2228 3255 0=128 1=3 3=2 4=1 5=1 6=36864
+Convolution              Conv_318                 1 1 2175_splitncnn_0 3258 0=128 1=3 3=2 4=1 5=1 6=73728
+BinaryOp                 Add_319                  2 1 3255 3258 2233
+BinaryOp                 Add_320                  2 1 2210 2216 2234
+ReLU                     Relu_321                 1 1 2234 2235
+Split                    splitncnn_60             1 2 2235 2235_splitncnn_0 2235_splitncnn_1
+BinaryOp                 Add_322                  2 1 2219 2225 2236
+ReLU                     Relu_323                 1 1 2236 2237
+Split                    splitncnn_61             1 2 2237 2237_splitncnn_0 2237_splitncnn_1
+BinaryOp                 Add_324                  2 1 2233 2203_splitncnn_0 2238
+ReLU                     Relu_325                 1 1 2238 2239
+Split                    splitncnn_62             1 2 2239 2239_splitncnn_0 2239_splitncnn_1
+Convolution              Conv_326                 1 1 2235_splitncnn_1 2242 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_328                 1 1 2242 3264 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_329                  2 1 3264 2235_splitncnn_0 2245
+ReLU                     Relu_330                 1 1 2245 2246
+Split                    splitncnn_63             1 2 2246 2246_splitncnn_0 2246_splitncnn_1
+Convolution              Conv_331                 1 1 2246_splitncnn_1 2249 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_333                 1 1 2249 3270 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_334                  2 1 3270 2246_splitncnn_0 2252
+ReLU                     Relu_335                 1 1 2252 2253
+Split                    splitncnn_64             1 2 2253 2253_splitncnn_0 2253_splitncnn_1
+Convolution              Conv_336                 1 1 2253_splitncnn_1 2256 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_338                 1 1 2256 3276 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_339                  2 1 3276 2253_splitncnn_0 2259
+ReLU                     Relu_340                 1 1 2259 2260
+Split                    splitncnn_65             1 2 2260 2260_splitncnn_0 2260_splitncnn_1
+Convolution              Conv_341                 1 1 2260_splitncnn_1 2263 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_343                 1 1 2263 3282 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_344                  2 1 3282 2260_splitncnn_0 2266
+ReLU                     Relu_345                 1 1 2266 2267
+Split                    splitncnn_66             1 3 2267 2267_splitncnn_0 2267_splitncnn_1 2267_splitncnn_2
+Convolution              Conv_346                 1 1 2237_splitncnn_1 2270 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_348                 1 1 2270 3288 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_349                  2 1 3288 2237_splitncnn_0 2273
+ReLU                     Relu_350                 1 1 2273 2274
+Split                    splitncnn_67             1 2 2274 2274_splitncnn_0 2274_splitncnn_1
+Convolution              Conv_351                 1 1 2274_splitncnn_1 2277 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_353                 1 1 2277 3294 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_354                  2 1 3294 2274_splitncnn_0 2280
+ReLU                     Relu_355                 1 1 2280 2281
+Split                    splitncnn_68             1 2 2281 2281_splitncnn_0 2281_splitncnn_1
+Convolution              Conv_356                 1 1 2281_splitncnn_1 2284 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_358                 1 1 2284 3300 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_359                  2 1 3300 2281_splitncnn_0 2287
+ReLU                     Relu_360                 1 1 2287 2288
+Split                    splitncnn_69             1 2 2288 2288_splitncnn_0 2288_splitncnn_1
+Convolution              Conv_361                 1 1 2288_splitncnn_1 2291 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_363                 1 1 2291 3306 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_364                  2 1 3306 2288_splitncnn_0 2294
+ReLU                     Relu_365                 1 1 2294 2295
+Split                    splitncnn_70             1 3 2295 2295_splitncnn_0 2295_splitncnn_1 2295_splitncnn_2
+Convolution              Conv_366                 1 1 2239_splitncnn_1 2298 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_368                 1 1 2298 3312 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_369                  2 1 3312 2239_splitncnn_0 2301
+ReLU                     Relu_370                 1 1 2301 2302
+Split                    splitncnn_71             1 2 2302 2302_splitncnn_0 2302_splitncnn_1
+Convolution              Conv_371                 1 1 2302_splitncnn_1 2305 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_373                 1 1 2305 3318 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_374                  2 1 3318 2302_splitncnn_0 2308
+ReLU                     Relu_375                 1 1 2308 2309
+Split                    splitncnn_72             1 2 2309 2309_splitncnn_0 2309_splitncnn_1
+Convolution              Conv_376                 1 1 2309_splitncnn_1 2312 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_378                 1 1 2312 3324 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_379                  2 1 3324 2309_splitncnn_0 2315
+ReLU                     Relu_380                 1 1 2315 2316
+Split                    splitncnn_73             1 2 2316 2316_splitncnn_0 2316_splitncnn_1
+Convolution              Conv_381                 1 1 2316_splitncnn_1 2319 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_383                 1 1 2319 3330 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_384                  2 1 3330 2316_splitncnn_0 2322
+ReLU                     Relu_385                 1 1 2322 2323
+Split                    splitncnn_74             1 3 2323 2323_splitncnn_0 2323_splitncnn_1 2323_splitncnn_2
+Convolution              Conv_386                 1 1 2295_splitncnn_2 3333 0=32 1=1 5=1 6=2048
+Interp                   Upsample_387             1 1 3333 2329 0=1 1=2.000000e+00 2=2.000000e+00
+BinaryOp                 Add_388                  2 1 2267_splitncnn_2 2329 2330
+Convolution              Conv_389                 1 1 2323_splitncnn_2 3336 0=32 1=1 5=1 6=4096
+Interp                   Upsample_390             1 1 3336 2336 0=1 1=4.000000e+00 2=4.000000e+00
+Convolution              Conv_391                 1 1 2267_splitncnn_1 3339 0=64 1=3 3=2 4=1 5=1 6=18432
+BinaryOp                 Add_392                  2 1 3339 2295_splitncnn_1 2339
+Convolution              Conv_393                 1 1 2323_splitncnn_1 3342 0=64 1=1 5=1 6=8192
+Interp                   Upsample_394             1 1 3342 2345 0=1 1=2.000000e+00 2=2.000000e+00
+Convolution              Conv_395                 1 1 2267_splitncnn_0 2348 0=32 1=3 3=2 4=1 5=1 6=9216 9=1
+Convolution              Conv_397                 1 1 2348 3348 0=128 1=3 3=2 4=1 5=1 6=36864
+Convolution              Conv_398                 1 1 2295_splitncnn_0 3351 0=128 1=3 3=2 4=1 5=1 6=73728
+BinaryOp                 Add_399                  2 1 3348 3351 2353
+BinaryOp                 Add_400                  2 1 2330 2336 2354
+ReLU                     Relu_401                 1 1 2354 2355
+Split                    splitncnn_75             1 2 2355 2355_splitncnn_0 2355_splitncnn_1
+BinaryOp                 Add_402                  2 1 2339 2345 2356
+ReLU                     Relu_403                 1 1 2356 2357
+Split                    splitncnn_76             1 2 2357 2357_splitncnn_0 2357_splitncnn_1
+BinaryOp                 Add_404                  2 1 2353 2323_splitncnn_0 2358
+ReLU                     Relu_405                 1 1 2358 2359
+Split                    splitncnn_77             1 3 2359 2359_splitncnn_0 2359_splitncnn_1 2359_splitncnn_2
+Convolution              Conv_406                 1 1 2359_splitncnn_2 2362 0=256 1=3 3=2 4=1 5=1 6=294912 9=1
+Split                    splitncnn_78             1 2 2362 2362_splitncnn_0 2362_splitncnn_1
+Convolution              Conv_408                 1 1 2355_splitncnn_1 2365 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_410                 1 1 2365 3360 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_411                  2 1 3360 2355_splitncnn_0 2368
+ReLU                     Relu_412                 1 1 2368 2369
+Split                    splitncnn_79             1 2 2369 2369_splitncnn_0 2369_splitncnn_1
+Convolution              Conv_413                 1 1 2369_splitncnn_1 2372 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_415                 1 1 2372 3366 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_416                  2 1 3366 2369_splitncnn_0 2375
+ReLU                     Relu_417                 1 1 2375 2376
+Split                    splitncnn_80             1 2 2376 2376_splitncnn_0 2376_splitncnn_1
+Convolution              Conv_418                 1 1 2376_splitncnn_1 2379 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_420                 1 1 2379 3372 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_421                  2 1 3372 2376_splitncnn_0 2382
+ReLU                     Relu_422                 1 1 2382 2383
+Split                    splitncnn_81             1 2 2383 2383_splitncnn_0 2383_splitncnn_1
+Convolution              Conv_423                 1 1 2383_splitncnn_1 2386 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_425                 1 1 2386 3378 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_426                  2 1 3378 2383_splitncnn_0 2389
+ReLU                     Relu_427                 1 1 2389 2390
+Split                    splitncnn_82             1 4 2390 2390_splitncnn_0 2390_splitncnn_1 2390_splitncnn_2 2390_splitncnn_3
+Convolution              Conv_428                 1 1 2357_splitncnn_1 2393 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_430                 1 1 2393 3384 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_431                  2 1 3384 2357_splitncnn_0 2396
+ReLU                     Relu_432                 1 1 2396 2397
+Split                    splitncnn_83             1 2 2397 2397_splitncnn_0 2397_splitncnn_1
+Convolution              Conv_433                 1 1 2397_splitncnn_1 2400 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_435                 1 1 2400 3390 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_436                  2 1 3390 2397_splitncnn_0 2403
+ReLU                     Relu_437                 1 1 2403 2404
+Split                    splitncnn_84             1 2 2404 2404_splitncnn_0 2404_splitncnn_1
+Convolution              Conv_438                 1 1 2404_splitncnn_1 2407 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_440                 1 1 2407 3396 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_441                  2 1 3396 2404_splitncnn_0 2410
+ReLU                     Relu_442                 1 1 2410 2411
+Split                    splitncnn_85             1 2 2411 2411_splitncnn_0 2411_splitncnn_1
+Convolution              Conv_443                 1 1 2411_splitncnn_1 2414 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_445                 1 1 2414 3402 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_446                  2 1 3402 2411_splitncnn_0 2417
+ReLU                     Relu_447                 1 1 2417 2418
+Split                    splitncnn_86             1 4 2418 2418_splitncnn_0 2418_splitncnn_1 2418_splitncnn_2 2418_splitncnn_3
+Convolution              Conv_448                 1 1 2359_splitncnn_1 2421 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_450                 1 1 2421 3408 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_451                  2 1 3408 2359_splitncnn_0 2424
+ReLU                     Relu_452                 1 1 2424 2425
+Split                    splitncnn_87             1 2 2425 2425_splitncnn_0 2425_splitncnn_1
+Convolution              Conv_453                 1 1 2425_splitncnn_1 2428 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_455                 1 1 2428 3414 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_456                  2 1 3414 2425_splitncnn_0 2431
+ReLU                     Relu_457                 1 1 2431 2432
+Split                    splitncnn_88             1 2 2432 2432_splitncnn_0 2432_splitncnn_1
+Convolution              Conv_458                 1 1 2432_splitncnn_1 2435 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_460                 1 1 2435 3420 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_461                  2 1 3420 2432_splitncnn_0 2438
+ReLU                     Relu_462                 1 1 2438 2439
+Split                    splitncnn_89             1 2 2439 2439_splitncnn_0 2439_splitncnn_1
+Convolution              Conv_463                 1 1 2439_splitncnn_1 2442 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_465                 1 1 2442 3426 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_466                  2 1 3426 2439_splitncnn_0 2445
+ReLU                     Relu_467                 1 1 2445 2446
+Split                    splitncnn_90             1 4 2446 2446_splitncnn_0 2446_splitncnn_1 2446_splitncnn_2 2446_splitncnn_3
+Convolution              Conv_468                 1 1 2362_splitncnn_1 2449 0=256 1=3 4=1 5=1 6=589824 9=1
+Convolution              Conv_470                 1 1 2449 3432 0=256 1=3 4=1 5=1 6=589824
+BinaryOp                 Add_471                  2 1 3432 2362_splitncnn_0 2452
+ReLU                     Relu_472                 1 1 2452 2453
+Split                    splitncnn_91             1 2 2453 2453_splitncnn_0 2453_splitncnn_1
+Convolution              Conv_473                 1 1 2453_splitncnn_1 2456 0=256 1=3 4=1 5=1 6=589824 9=1
+Convolution              Conv_475                 1 1 2456 3438 0=256 1=3 4=1 5=1 6=589824
+BinaryOp                 Add_476                  2 1 3438 2453_splitncnn_0 2459
+ReLU                     Relu_477                 1 1 2459 2460
+Split                    splitncnn_92             1 2 2460 2460_splitncnn_0 2460_splitncnn_1
+Convolution              Conv_478                 1 1 2460_splitncnn_1 2463 0=256 1=3 4=1 5=1 6=589824 9=1
+Convolution              Conv_480                 1 1 2463 3444 0=256 1=3 4=1 5=1 6=589824
+BinaryOp                 Add_481                  2 1 3444 2460_splitncnn_0 2466
+ReLU                     Relu_482                 1 1 2466 2467
+Split                    splitncnn_93             1 2 2467 2467_splitncnn_0 2467_splitncnn_1
+Convolution              Conv_483                 1 1 2467_splitncnn_1 2470 0=256 1=3 4=1 5=1 6=589824 9=1
+Convolution              Conv_485                 1 1 2470 3450 0=256 1=3 4=1 5=1 6=589824
+BinaryOp                 Add_486                  2 1 3450 2467_splitncnn_0 2473
+ReLU                     Relu_487                 1 1 2473 2474
+Split                    splitncnn_94             1 4 2474 2474_splitncnn_0 2474_splitncnn_1 2474_splitncnn_2 2474_splitncnn_3
+Convolution              Conv_488                 1 1 2418_splitncnn_3 3453 0=32 1=1 5=1 6=2048
+Interp                   Upsample_489             1 1 3453 2480 0=1 1=2.000000e+00 2=2.000000e+00
+BinaryOp                 Add_490                  2 1 2390_splitncnn_3 2480 2481
+Convolution              Conv_491                 1 1 2446_splitncnn_3 3456 0=32 1=1 5=1 6=4096
+Interp                   Upsample_492             1 1 3456 2487 0=1 1=4.000000e+00 2=4.000000e+00
+BinaryOp                 Add_493                  2 1 2481 2487 2488
+Convolution              Conv_494                 1 1 2474_splitncnn_3 3459 0=32 1=1 5=1 6=8192
+Interp                   Upsample_495             1 1 3459 2494 0=1 1=8.000000e+00 2=8.000000e+00
+Convolution              Conv_496                 1 1 2390_splitncnn_2 3462 0=64 1=3 3=2 4=1 5=1 6=18432
+BinaryOp                 Add_497                  2 1 3462 2418_splitncnn_2 2497
+Convolution              Conv_498                 1 1 2446_splitncnn_2 3465 0=64 1=1 5=1 6=8192
+Interp                   Upsample_499             1 1 3465 2503 0=1 1=2.000000e+00 2=2.000000e+00
+BinaryOp                 Add_500                  2 1 2497 2503 2504
+Convolution              Conv_501                 1 1 2474_splitncnn_2 3468 0=64 1=1 5=1 6=16384
+Interp                   Upsample_502             1 1 3468 2510 0=1 1=4.000000e+00 2=4.000000e+00
+Convolution              Conv_503                 1 1 2390_splitncnn_1 2513 0=32 1=3 3=2 4=1 5=1 6=9216 9=1
+Convolution              Conv_505                 1 1 2513 3474 0=128 1=3 3=2 4=1 5=1 6=36864
+Convolution              Conv_506                 1 1 2418_splitncnn_1 3477 0=128 1=3 3=2 4=1 5=1 6=73728
+BinaryOp                 Add_507                  2 1 3474 3477 2518
+BinaryOp                 Add_508                  2 1 2518 2446_splitncnn_1 2519
+Convolution              Conv_509                 1 1 2474_splitncnn_1 3480 0=128 1=1 5=1 6=32768
+Interp                   Upsample_510             1 1 3480 2525 0=1 1=2.000000e+00 2=2.000000e+00
+Convolution              Conv_511                 1 1 2390_splitncnn_0 2528 0=32 1=3 3=2 4=1 5=1 6=9216 9=1
+Convolution              Conv_513                 1 1 2528 2531 0=32 1=3 3=2 4=1 5=1 6=9216 9=1
+Convolution              Conv_515                 1 1 2531 3489 0=256 1=3 3=2 4=1 5=1 6=73728
+Convolution              Conv_516                 1 1 2418_splitncnn_0 2536 0=64 1=3 3=2 4=1 5=1 6=36864 9=1
+Convolution              Conv_518                 1 1 2536 3495 0=256 1=3 3=2 4=1 5=1 6=147456
+BinaryOp                 Add_519                  2 1 3489 3495 2539
+Convolution              Conv_520                 1 1 2446_splitncnn_0 3498 0=256 1=3 3=2 4=1 5=1 6=294912
+BinaryOp                 Add_521                  2 1 2539 3498 2542
+BinaryOp                 Add_522                  2 1 2488 2494 2543
+ReLU                     Relu_523                 1 1 2543 2544
+Split                    splitncnn_95             1 2 2544 2544_splitncnn_0 2544_splitncnn_1
+BinaryOp                 Add_524                  2 1 2504 2510 2545
+ReLU                     Relu_525                 1 1 2545 2546
+Split                    splitncnn_96             1 2 2546 2546_splitncnn_0 2546_splitncnn_1
+BinaryOp                 Add_526                  2 1 2519 2525 2547
+ReLU                     Relu_527                 1 1 2547 2548
+Split                    splitncnn_97             1 2 2548 2548_splitncnn_0 2548_splitncnn_1
+BinaryOp                 Add_528                  2 1 2542 2474_splitncnn_0 2549
+ReLU                     Relu_529                 1 1 2549 2550
+Split                    splitncnn_98             1 2 2550 2550_splitncnn_0 2550_splitncnn_1
+Convolution              Conv_530                 1 1 2544_splitncnn_1 2553 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_532                 1 1 2553 3504 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_533                  2 1 3504 2544_splitncnn_0 2556
+ReLU                     Relu_534                 1 1 2556 2557
+Split                    splitncnn_99             1 2 2557 2557_splitncnn_0 2557_splitncnn_1
+Convolution              Conv_535                 1 1 2557_splitncnn_1 2560 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_537                 1 1 2560 3510 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_538                  2 1 3510 2557_splitncnn_0 2563
+ReLU                     Relu_539                 1 1 2563 2564
+Split                    splitncnn_100            1 2 2564 2564_splitncnn_0 2564_splitncnn_1
+Convolution              Conv_540                 1 1 2564_splitncnn_1 2567 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_542                 1 1 2567 3516 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_543                  2 1 3516 2564_splitncnn_0 2570
+ReLU                     Relu_544                 1 1 2570 2571
+Split                    splitncnn_101            1 2 2571 2571_splitncnn_0 2571_splitncnn_1
+Convolution              Conv_545                 1 1 2571_splitncnn_1 2574 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_547                 1 1 2574 3522 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_548                  2 1 3522 2571_splitncnn_0 2577
+ReLU                     Relu_549                 1 1 2577 2578
+Split                    splitncnn_102            1 4 2578 2578_splitncnn_0 2578_splitncnn_1 2578_splitncnn_2 2578_splitncnn_3
+Convolution              Conv_550                 1 1 2546_splitncnn_1 2581 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_552                 1 1 2581 3528 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_553                  2 1 3528 2546_splitncnn_0 2584
+ReLU                     Relu_554                 1 1 2584 2585
+Split                    splitncnn_103            1 2 2585 2585_splitncnn_0 2585_splitncnn_1
+Convolution              Conv_555                 1 1 2585_splitncnn_1 2588 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_557                 1 1 2588 3534 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_558                  2 1 3534 2585_splitncnn_0 2591
+ReLU                     Relu_559                 1 1 2591 2592
+Split                    splitncnn_104            1 2 2592 2592_splitncnn_0 2592_splitncnn_1
+Convolution              Conv_560                 1 1 2592_splitncnn_1 2595 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_562                 1 1 2595 3540 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_563                  2 1 3540 2592_splitncnn_0 2598
+ReLU                     Relu_564                 1 1 2598 2599
+Split                    splitncnn_105            1 2 2599 2599_splitncnn_0 2599_splitncnn_1
+Convolution              Conv_565                 1 1 2599_splitncnn_1 2602 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_567                 1 1 2602 3546 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_568                  2 1 3546 2599_splitncnn_0 2605
+ReLU                     Relu_569                 1 1 2605 2606
+Split                    splitncnn_106            1 4 2606 2606_splitncnn_0 2606_splitncnn_1 2606_splitncnn_2 2606_splitncnn_3
+Convolution              Conv_570                 1 1 2548_splitncnn_1 2609 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_572                 1 1 2609 3552 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_573                  2 1 3552 2548_splitncnn_0 2612
+ReLU                     Relu_574                 1 1 2612 2613
+Split                    splitncnn_107            1 2 2613 2613_splitncnn_0 2613_splitncnn_1
+Convolution              Conv_575                 1 1 2613_splitncnn_1 2616 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_577                 1 1 2616 3558 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_578                  2 1 3558 2613_splitncnn_0 2619
+ReLU                     Relu_579                 1 1 2619 2620
+Split                    splitncnn_108            1 2 2620 2620_splitncnn_0 2620_splitncnn_1
+Convolution              Conv_580                 1 1 2620_splitncnn_1 2623 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_582                 1 1 2623 3564 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_583                  2 1 3564 2620_splitncnn_0 2626
+ReLU                     Relu_584                 1 1 2626 2627
+Split                    splitncnn_109            1 2 2627 2627_splitncnn_0 2627_splitncnn_1
+Convolution              Conv_585                 1 1 2627_splitncnn_1 2630 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_587                 1 1 2630 3570 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_588                  2 1 3570 2627_splitncnn_0 2633
+ReLU                     Relu_589                 1 1 2633 2634
+Split                    splitncnn_110            1 4 2634 2634_splitncnn_0 2634_splitncnn_1 2634_splitncnn_2 2634_splitncnn_3
+Convolution              Conv_590                 1 1 2550_splitncnn_1 2637 0=256 1=3 4=1 5=1 6=589824 9=1
+Convolution              Conv_592                 1 1 2637 3576 0=256 1=3 4=1 5=1 6=589824
+BinaryOp                 Add_593                  2 1 3576 2550_splitncnn_0 2640
+ReLU                     Relu_594                 1 1 2640 2641
+Split                    splitncnn_111            1 2 2641 2641_splitncnn_0 2641_splitncnn_1
+Convolution              Conv_595                 1 1 2641_splitncnn_1 2644 0=256 1=3 4=1 5=1 6=589824 9=1
+Convolution              Conv_597                 1 1 2644 3582 0=256 1=3 4=1 5=1 6=589824
+BinaryOp                 Add_598                  2 1 3582 2641_splitncnn_0 2647
+ReLU                     Relu_599                 1 1 2647 2648
+Split                    splitncnn_112            1 2 2648 2648_splitncnn_0 2648_splitncnn_1
+Convolution              Conv_600                 1 1 2648_splitncnn_1 2651 0=256 1=3 4=1 5=1 6=589824 9=1
+Convolution              Conv_602                 1 1 2651 3588 0=256 1=3 4=1 5=1 6=589824
+BinaryOp                 Add_603                  2 1 3588 2648_splitncnn_0 2654
+ReLU                     Relu_604                 1 1 2654 2655
+Split                    splitncnn_113            1 2 2655 2655_splitncnn_0 2655_splitncnn_1
+Convolution              Conv_605                 1 1 2655_splitncnn_1 2658 0=256 1=3 4=1 5=1 6=589824 9=1
+Convolution              Conv_607                 1 1 2658 3594 0=256 1=3 4=1 5=1 6=589824
+BinaryOp                 Add_608                  2 1 3594 2655_splitncnn_0 2661
+ReLU                     Relu_609                 1 1 2661 2662
+Split                    splitncnn_114            1 4 2662 2662_splitncnn_0 2662_splitncnn_1 2662_splitncnn_2 2662_splitncnn_3
+Convolution              Conv_610                 1 1 2606_splitncnn_3 3597 0=32 1=1 5=1 6=2048
+Interp                   Upsample_611             1 1 3597 2668 0=1 1=2.000000e+00 2=2.000000e+00
+BinaryOp                 Add_612                  2 1 2578_splitncnn_3 2668 2669
+Convolution              Conv_613                 1 1 2634_splitncnn_3 3600 0=32 1=1 5=1 6=4096
+Interp                   Upsample_614             1 1 3600 2675 0=1 1=4.000000e+00 2=4.000000e+00
+BinaryOp                 Add_615                  2 1 2669 2675 2676
+Convolution              Conv_616                 1 1 2662_splitncnn_3 3603 0=32 1=1 5=1 6=8192
+Interp                   Upsample_617             1 1 3603 2682 0=1 1=8.000000e+00 2=8.000000e+00
+Convolution              Conv_618                 1 1 2578_splitncnn_2 3606 0=64 1=3 3=2 4=1 5=1 6=18432
+BinaryOp                 Add_619                  2 1 3606 2606_splitncnn_2 2685
+Convolution              Conv_620                 1 1 2634_splitncnn_2 3609 0=64 1=1 5=1 6=8192
+Interp                   Upsample_621             1 1 3609 2691 0=1 1=2.000000e+00 2=2.000000e+00
+BinaryOp                 Add_622                  2 1 2685 2691 2692
+Convolution              Conv_623                 1 1 2662_splitncnn_2 3612 0=64 1=1 5=1 6=16384
+Interp                   Upsample_624             1 1 3612 2698 0=1 1=4.000000e+00 2=4.000000e+00
+Convolution              Conv_625                 1 1 2578_splitncnn_1 2701 0=32 1=3 3=2 4=1 5=1 6=9216 9=1
+Convolution              Conv_627                 1 1 2701 3618 0=128 1=3 3=2 4=1 5=1 6=36864
+Convolution              Conv_628                 1 1 2606_splitncnn_1 3621 0=128 1=3 3=2 4=1 5=1 6=73728
+BinaryOp                 Add_629                  2 1 3618 3621 2706
+BinaryOp                 Add_630                  2 1 2706 2634_splitncnn_1 2707
+Convolution              Conv_631                 1 1 2662_splitncnn_1 3624 0=128 1=1 5=1 6=32768
+Interp                   Upsample_632             1 1 3624 2713 0=1 1=2.000000e+00 2=2.000000e+00
+Convolution              Conv_633                 1 1 2578_splitncnn_0 2716 0=32 1=3 3=2 4=1 5=1 6=9216 9=1
+Convolution              Conv_635                 1 1 2716 2719 0=32 1=3 3=2 4=1 5=1 6=9216 9=1
+Convolution              Conv_637                 1 1 2719 3633 0=256 1=3 3=2 4=1 5=1 6=73728
+Convolution              Conv_638                 1 1 2606_splitncnn_0 2724 0=64 1=3 3=2 4=1 5=1 6=36864 9=1
+Convolution              Conv_640                 1 1 2724 3639 0=256 1=3 3=2 4=1 5=1 6=147456
+BinaryOp                 Add_641                  2 1 3633 3639 2727
+Convolution              Conv_642                 1 1 2634_splitncnn_0 3642 0=256 1=3 3=2 4=1 5=1 6=294912
+BinaryOp                 Add_643                  2 1 2727 3642 2730
+BinaryOp                 Add_644                  2 1 2676 2682 2731
+ReLU                     Relu_645                 1 1 2731 2732
+Split                    splitncnn_115            1 2 2732 2732_splitncnn_0 2732_splitncnn_1
+BinaryOp                 Add_646                  2 1 2692 2698 2733
+ReLU                     Relu_647                 1 1 2733 2734
+Split                    splitncnn_116            1 2 2734 2734_splitncnn_0 2734_splitncnn_1
+BinaryOp                 Add_648                  2 1 2707 2713 2735
+ReLU                     Relu_649                 1 1 2735 2736
+Split                    splitncnn_117            1 2 2736 2736_splitncnn_0 2736_splitncnn_1
+BinaryOp                 Add_650                  2 1 2730 2662_splitncnn_0 2737
+ReLU                     Relu_651                 1 1 2737 2738
+Split                    splitncnn_118            1 2 2738 2738_splitncnn_0 2738_splitncnn_1
+Convolution              Conv_652                 1 1 2732_splitncnn_1 2741 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_654                 1 1 2741 3648 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_655                  2 1 3648 2732_splitncnn_0 2744
+ReLU                     Relu_656                 1 1 2744 2745
+Split                    splitncnn_119            1 2 2745 2745_splitncnn_0 2745_splitncnn_1
+Convolution              Conv_657                 1 1 2745_splitncnn_1 2748 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_659                 1 1 2748 3654 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_660                  2 1 3654 2745_splitncnn_0 2751
+ReLU                     Relu_661                 1 1 2751 2752
+Split                    splitncnn_120            1 2 2752 2752_splitncnn_0 2752_splitncnn_1
+Convolution              Conv_662                 1 1 2752_splitncnn_1 2755 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_664                 1 1 2755 3660 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_665                  2 1 3660 2752_splitncnn_0 2758
+ReLU                     Relu_666                 1 1 2758 2759
+Split                    splitncnn_121            1 2 2759 2759_splitncnn_0 2759_splitncnn_1
+Convolution              Conv_667                 1 1 2759_splitncnn_1 2762 0=32 1=3 4=1 5=1 6=9216 9=1
+Convolution              Conv_669                 1 1 2762 3666 0=32 1=3 4=1 5=1 6=9216
+BinaryOp                 Add_670                  2 1 3666 2759_splitncnn_0 2765
+ReLU                     Relu_671                 1 1 2765 2766
+Convolution              Conv_672                 1 1 2734_splitncnn_1 2769 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_674                 1 1 2769 3672 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_675                  2 1 3672 2734_splitncnn_0 2772
+ReLU                     Relu_676                 1 1 2772 2773
+Split                    splitncnn_122            1 2 2773 2773_splitncnn_0 2773_splitncnn_1
+Convolution              Conv_677                 1 1 2773_splitncnn_1 2776 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_679                 1 1 2776 3678 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_680                  2 1 3678 2773_splitncnn_0 2779
+ReLU                     Relu_681                 1 1 2779 2780
+Split                    splitncnn_123            1 2 2780 2780_splitncnn_0 2780_splitncnn_1
+Convolution              Conv_682                 1 1 2780_splitncnn_1 2783 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_684                 1 1 2783 3684 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_685                  2 1 3684 2780_splitncnn_0 2786
+ReLU                     Relu_686                 1 1 2786 2787
+Split                    splitncnn_124            1 2 2787 2787_splitncnn_0 2787_splitncnn_1
+Convolution              Conv_687                 1 1 2787_splitncnn_1 2790 0=64 1=3 4=1 5=1 6=36864 9=1
+Convolution              Conv_689                 1 1 2790 3690 0=64 1=3 4=1 5=1 6=36864
+BinaryOp                 Add_690                  2 1 3690 2787_splitncnn_0 2793
+ReLU                     Relu_691                 1 1 2793 2794
+Convolution              Conv_692                 1 1 2736_splitncnn_1 2797 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_694                 1 1 2797 3696 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_695                  2 1 3696 2736_splitncnn_0 2800
+ReLU                     Relu_696                 1 1 2800 2801
+Split                    splitncnn_125            1 2 2801 2801_splitncnn_0 2801_splitncnn_1
+Convolution              Conv_697                 1 1 2801_splitncnn_1 2804 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_699                 1 1 2804 3702 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_700                  2 1 3702 2801_splitncnn_0 2807
+ReLU                     Relu_701                 1 1 2807 2808
+Split                    splitncnn_126            1 2 2808 2808_splitncnn_0 2808_splitncnn_1
+Convolution              Conv_702                 1 1 2808_splitncnn_1 2811 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_704                 1 1 2811 3708 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_705                  2 1 3708 2808_splitncnn_0 2814
+ReLU                     Relu_706                 1 1 2814 2815
+Split                    splitncnn_127            1 2 2815 2815_splitncnn_0 2815_splitncnn_1
+Convolution              Conv_707                 1 1 2815_splitncnn_1 2818 0=128 1=3 4=1 5=1 6=147456 9=1
+Convolution              Conv_709                 1 1 2818 3714 0=128 1=3 4=1 5=1 6=147456
+BinaryOp                 Add_710                  2 1 3714 2815_splitncnn_0 2821
+ReLU                     Relu_711                 1 1 2821 2822
+Convolution              Conv_712                 1 1 2738_splitncnn_1 2825 0=256 1=3 4=1 5=1 6=589824 9=1
+Convolution              Conv_714                 1 1 2825 3720 0=256 1=3 4=1 5=1 6=589824
+BinaryOp                 Add_715                  2 1 3720 2738_splitncnn_0 2828
+ReLU                     Relu_716                 1 1 2828 2829
+Split                    splitncnn_128            1 2 2829 2829_splitncnn_0 2829_splitncnn_1
+Convolution              Conv_717                 1 1 2829_splitncnn_1 2832 0=256 1=3 4=1 5=1 6=589824 9=1
+Convolution              Conv_719                 1 1 2832 3726 0=256 1=3 4=1 5=1 6=589824
+BinaryOp                 Add_720                  2 1 3726 2829_splitncnn_0 2835
+ReLU                     Relu_721                 1 1 2835 2836
+Split                    splitncnn_129            1 2 2836 2836_splitncnn_0 2836_splitncnn_1
+Convolution              Conv_722                 1 1 2836_splitncnn_1 2839 0=256 1=3 4=1 5=1 6=589824 9=1
+Convolution              Conv_724                 1 1 2839 3732 0=256 1=3 4=1 5=1 6=589824
+BinaryOp                 Add_725                  2 1 3732 2836_splitncnn_0 2842
+ReLU                     Relu_726                 1 1 2842 2843
+Split                    splitncnn_130            1 2 2843 2843_splitncnn_0 2843_splitncnn_1
+Convolution              Conv_727                 1 1 2843_splitncnn_1 2846 0=256 1=3 4=1 5=1 6=589824 9=1
+Convolution              Conv_729                 1 1 2846 3738 0=256 1=3 4=1 5=1 6=589824
+BinaryOp                 Add_730                  2 1 3738 2843_splitncnn_0 2849
+ReLU                     Relu_731                 1 1 2849 2850
+Convolution              Conv_732                 1 1 2794 3741 0=32 1=1 5=1 6=2048
+Interp                   Upsample_733             1 1 3741 2856 0=1 1=2.000000e+00 2=2.000000e+00
+BinaryOp                 Add_734                  2 1 2766 2856 2857
+Convolution              Conv_735                 1 1 2822 3744 0=32 1=1 5=1 6=4096
+Interp                   Upsample_736             1 1 3744 2863 0=1 1=4.000000e+00 2=4.000000e+00
+BinaryOp                 Add_737                  2 1 2857 2863 2864
+Convolution              Conv_738                 1 1 2850 3747 0=32 1=1 5=1 6=8192
+Interp                   Upsample_739             1 1 3747 2870 0=1 1=8.000000e+00 2=8.000000e+00
+BinaryOp                 Add_740                  2 1 2864 2870 2871
+ReLU                     Relu_741                 1 1 2871 2872
+Convolution              Conv_742                 1 1 2872 2873 0=17 1=1 5=1 6=544
